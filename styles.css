@@ -76,6 +76,10 @@ nav button span{
     animation: smbob 3s ease-in-out infinite;
     animation-delay: 2s;
 }
+#nav5{
+    animation: smbob 3s ease-in-out infinite;
+    animation-delay: 2.5s;
+}
 
 
 
@@ -114,7 +118,7 @@ nav button span{
   touch-action: manipulation;
   vertical-align: baseline;
   white-space: nowrap;
-  margin: 0 30px;
+  margin: 0 1vw;
   border-radius: 5px;
 }
 
@@ -216,11 +220,30 @@ button:hover{
     flex-direction:row;
     justify-content: space-around;
 }
+.vertinfocard{
+    margin-top: 40px;
+    padding: 30px;
+    border: 5px solid white;
+    border-radius: 50px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
 .infocard-img{
 margin-left: 100px;
 }
+.vertinfocard-img{
+margin: 20px auto;
+margin-top: -90px;
+margin-bottom: 30px;
+}
+.vertinfocard-img img{
+border-radius: 5px;
+
+}
 .infocard-img img{
 height: fit-content;
+border-radius: 5px;
 }
 .infocard-text p{
 font-size: 1.5rem;
@@ -254,6 +277,10 @@ main{
 }
 .sminfocard-img{
     margin: 0 auto;
+}
+.sminfocard-img img{
+    margin: 0 auto;
+    border-radius: 5px;
 }
 
 @font-face {
