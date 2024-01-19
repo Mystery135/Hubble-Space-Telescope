@@ -1,0 +1,277 @@
+*{
+    font-family: serif;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Firs Neue", serif;
+}
+h2{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+html{
+    background-color: black;
+}
+.title, .subtitle{
+    text-align: center;
+    padding: 50px;
+    font-family: "Firs Neue", serif;
+}
+
+.hubblepic{
+    position: relative;
+    z-index: 98;
+    text-align: center;
+    margin: 0 auto;
+}
+.hubblepic1{
+
+    position: relative;
+    z-index: 98;
+    text-align: center;
+    margin: 100px auto;
+}
+.hubblepic1 img{
+border-radius: 50%;
+}
+
+.hubblepic img{
+    animation: bob 3s ease-in-out infinite;
+}
+
+header{
+    position: relative;
+    z-index: 99;
+}
+nav{
+    position: relative;
+    z-index: 99;
+    text-align: center;
+}
+nav button span{
+    
+    color: black;
+
+}
+
+#nav1{
+    animation: smbob 3s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+#nav2{
+    animation: smbob 3s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+#nav3{
+    animation: smbob 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+#nav4{
+    animation: smbob 3s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+
+
+
+
+
+
+
+
+/* CSS */
+.button-48 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  margin: 0 30px;
+  border-radius: 5px;
+}
+
+.button-48:before {
+    border-radius: 5px;
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #3f3f3f;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 span {
+    font-family: "Firs Neue", serif;
+  z-index: 100;
+  position: relative;
+}
+
+
+
+
+
+/* 
+
+button:hover{
+
+    cursor: pointer;
+    box-shadow: -4px 5px 10px gray;
+}
+ */
+
+.starry-sky {
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: black; /* Representing the night sky */
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    background: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    opacity: 1;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateX(100vw); 
+        opacity: 10%; 
+    }
+}
+
+@keyframes bob{
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-20px); 
+    }
+}
+@keyframes smbob{
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-5px); 
+    }
+}
+
+.infocard{
+    margin-top: 40px;
+    padding: 30px;
+    border: 5px solid white;
+    border-radius: 50px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.infocard-img{
+margin-left: 100px;
+}
+.infocard-img img{
+height: fit-content;
+}
+.infocard-text p{
+font-size: 1.5rem;
+}
+.infocard-text h2{
+    font-family: "Firs Neue", serif;
+
+}
+main{
+    overflow: hidden;
+    width: 80vw;
+    margin: 0 auto;
+}
+.smallinfocardgroup{
+    display: flex;
+    justify-content: space-around;
+
+}
+.smallinfocard{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 40px;
+    padding: 30px;
+    border: 5px solid white;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.sminfocard-img{
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "Firs Neue";
+    src: url("/fonts/TT Firs Neue Trial Medium.ttf");
+  }
+  
+  ul{
+    font-size: 1.5rem;
+    list-style: circle;
+  }
+  li{
+    margin-top: 20px;
+  }
+b{
+    font-weight: bold;
+}
+.refs{
+    width: 50vw;
+    margin: 0 auto;
+}
