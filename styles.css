@@ -6,7 +6,7 @@
 h1{
     font-size: 3rem;
     font-weight: 700;
-    font-family: "Firs Neue", serif;
+    font-family: "Firs Neue", "Roboto", serif;
 }
 h2{
     font-size: 2.3rem;
@@ -18,7 +18,7 @@ html{
 .title, .subtitle{
     text-align: center;
     padding: 50px;
-    font-family: "Firs Neue", serif;
+    font-family: "Firs Neue", "Roboto", serif;
 }
 
 .hubblepic{
@@ -149,7 +149,7 @@ nav button span{
 }
 
 .button-48 span {
-    font-family: "Firs Neue", serif;
+    font-family: "Firs Neue", "Roboto", serif;
   z-index: 100;
   position: relative;
 }
@@ -249,7 +249,7 @@ border-radius: 5px;
 font-size: 1.5rem;
 }
 .infocard-text h2{
-    font-family: "Firs Neue", serif;
+    font-family: "Firs Neue", "Roboto", serif;
 
 }
 main{
